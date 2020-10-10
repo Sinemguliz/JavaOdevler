@@ -1,6 +1,8 @@
-package chapter3;
+package chapter03;
 
-// Question 3.24
+/* 3.24 (Game: pick a card) Write a program that simulates picking a card from a deck
+of 52 cards. Your program should display the rank (Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+Jack, Queen, King) and suit (Clubs, Diamonds, Hearts, Spades) of the card. */
 public class Q24 {
 	public static void main(String[] args) {
 		int r = (int) (Math.random() * 52);
