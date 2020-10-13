@@ -14,13 +14,13 @@ public class Q12 {
 		int palindrome = input.nextInt();
 
 		int digit1 = (palindrome - (palindrome % 100)) / 100;
-		int digit2 = ((palindrome - (100 * digit1))) / 10;		
-		int digit3 = palindrome - ((100 * digit1) + (10 * digit2));		
+		int digit2 = ((palindrome - (100 * digit1))) / 10;
+		int digit3 = palindrome - ((100 * digit1) + (10 * digit2));
 		int reverse = digit3 * 100 + digit2 * 10 + digit1;
 
 		if (reverse == palindrome)
-			System.out.println(palindrome + " is a palindrome");
+			System.out.println(palindrome + " is a palindrome.");
 		else
-			System.out.println(palindrome + " is not a palindrome");
+			System.out.println(palindrome + " is not a palindrome.");
 	}
 }

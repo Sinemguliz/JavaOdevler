@@ -9,7 +9,7 @@ better price.*/
 public class Q33 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		
+
 		System.out.print("Enter weight and price for package 1: ");
 		double weight1 = input.nextDouble();
 		double price1 = input.nextDouble();
