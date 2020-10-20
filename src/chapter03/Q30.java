@@ -6,7 +6,7 @@ public class Q30 {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
-		System.out.print("Enter the time zone offset to GMT:");
+		System.out.print("Enter the time zone offset to GMT: ");
 		int offset = input.nextInt();
 		offset = offset * 60 * 60;
 
@@ -22,12 +22,11 @@ public class Q30 {
 		if (currentHour >= 12) {
 			s = " PM";
 		}
+		
 		if (currentHour >= 13) {
 			currentHour = currentHour - 12;
-		}
-
-		if (currentHour == 0) {
-			currentHour = currentHour + 12;
+		} else if (currentHour == 0) {
+			currentHour = 12;
 		}
 
 		System.out.println("Current time is " + currentHour + ":" + currentMinute + ":" + currentSecond + s);

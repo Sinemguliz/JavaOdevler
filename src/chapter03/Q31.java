@@ -29,5 +29,4 @@ public class Q31 {
 			System.out.println("Incorrect input");
 		}
 	}
-ornek yanlis 1 yerine 5 girmis
 }

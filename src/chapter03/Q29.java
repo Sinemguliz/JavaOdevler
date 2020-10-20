@@ -10,6 +10,7 @@ public class Q29 {
 		double x1 = input.nextDouble();
 		double y1 = input.nextDouble();
 		double r1 = input.nextDouble();
+		
 		System.out.print("Enter circle1's center x-, y-coordinates, and radius: ");
 		double x2 = input.nextDouble();
 		double y2 = input.nextDouble();
