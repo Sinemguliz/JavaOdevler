@@ -5,10 +5,10 @@ and 12 and displays the English month names January, February, . . . , December
 for the numbers 1, 2, . . . , 12, accordingly.*/
 public class Q04 {
 	public static void main(String[] args) {
-		int m = (int) (Math.random() * 13);
+		int numOfMonth = (int) (Math.random() * 12 + 1);
 
 		String month = "";
-		switch (m % 12 + 1) {
+		switch (numOfMonth) {
 		case 1:
 			month = "January";
 			break;
@@ -45,10 +45,7 @@ public class Q04 {
 		case 12:
 			month = "Dec";
 			break;
-		default:
-			month = m % 12 + "";
-
 		}
-		System.out.println("As the month " + m + " is " + month);
+		System.out.print("As the month " + numOfMonth + " is " + month);
 	}
 }

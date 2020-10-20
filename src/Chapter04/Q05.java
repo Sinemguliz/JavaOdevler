@@ -11,10 +11,9 @@ public class Q05 {
 		System.out.print("Enter the side: ");
 		double side = input.nextDouble();
 
-		double area = (numberOfSides * Math.pow(side, 2) / 
-			(4 * Math.tan(Math.PI / numberOfSides)));
+		double area = (numberOfSides * Math.pow(side, 2) / (4 * Math.tan(Math.PI / numberOfSides)));
 
-		System.out.println("The area of the polygon is " + area);
+		System.out.print("The area of the polygon is " + area);
 	}
 
 }

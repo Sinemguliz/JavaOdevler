@@ -14,18 +14,20 @@ Use negative to indicate south and east degrees. Here is a sample run: */
 import java.util.Scanner;
 
 public class Q02 {
-	public static void main (String[] args){
-		
-        Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
 
-        System.out.print("Enter point 1 (latitude and longitude) in degrees: ");
-        double latitude1 = sc.nextDouble();
-        double longitude1 = sc.nextDouble();
-        System.out.print("Enter point 2 (latitude and longitude) in degrees: ");
-        double latitude2 = sc.nextDouble();
-        double longitude2 = sc.nextDouble();
+		Scanner sc = new Scanner(System.in);
 
-        double d = 6371.01 * Math.acos((Math.sin(Math.toRadians(latitude1)) * Math.sin(Math.toRadians(longitude1))) + (Math.cos(Math.toRadians(latitude1)) * Math.cos(Math.toRadians(longitude1)) * Math.cos(Math.toRadians(longitude2) - Math.toRadians(latitude2))));
-        System.out.printf("The distance between the two points is %f km.%n", d);    
-    }
+		System.out.print("Enter point 1 (latitude and longitude) in degrees: ");
+		double latitude1 = sc.nextDouble();
+		double longitude1 = sc.nextDouble();
+		System.out.print("Enter point 2 (latitude and longitude) in degrees: ");
+		double latitude2 = sc.nextDouble();
+		double longitude2 = sc.nextDouble();
+
+		double d = 6371.01 * Math.acos((Math.sin(Math.toRadians(latitude1)) * Math.sin(Math.toRadians(longitude1)))
+				+ (Math.cos(Math.toRadians(latitude1)) * Math.cos(Math.toRadians(longitude1))
+						* Math.cos(Math.toRadians(longitude2) - Math.toRadians(latitude2))));
+		System.out.printf("The distance between the two points is %f km.%n", d);
+	}
 }

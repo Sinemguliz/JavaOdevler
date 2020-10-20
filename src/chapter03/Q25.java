@@ -29,7 +29,7 @@ public class Q25 {
 		else {
 			double x = (e * d - b * f) / (a * d - b * c);
 			double y = (a * f - e * c) / (a * d - b * c);
-			System.out.println("The intersecting point is at (" + x + ", " + y + ")");
+			System.out.printf("The intersecting point is at (%.5f, %.5f)", x, y);
 		}
 	}
 }

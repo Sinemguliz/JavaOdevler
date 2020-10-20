@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Q09 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Enter the first 9 digits of an ISBN as integer:");
+		System.out.print("Enter the first 9 digits of an ISBN as integer: ");
 		int number = scan.nextInt();
 
 		int d1 = number / 100000000;

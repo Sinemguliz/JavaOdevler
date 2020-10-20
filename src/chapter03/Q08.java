@@ -8,24 +8,24 @@ public class Q08 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
-		System.out.println("Enter 3 numbers:");
+		System.out.print("Enter 3 numbers:");
 
-		int a = scan.nextInt();
-		int b = scan.nextInt();
-		int c = scan.nextInt();
+		int number1 = scan.nextInt();
+		int number2 = scan.nextInt();
+		int number3 = scan.nextInt();
 
-		if (a > b && a > c && b > c)
-			System.out.println("the integers in non-decreasing order: " + a + " " + b + " " + c);
-		if (a > b && a > c && c > b)
-			System.out.println("the integers in non-decreasing order: " + a + " " + c + " " + b);
-		else if (b > a && b > c && a > c)
-			System.out.println("the integers in non-decreasing order: " + b + " " + a + " " + c);
-		else if (b > a && b > c && c > a)
-			System.out.println("the integers in non-decreasing order: " + b + " " + c + " " + a);
-		else if (c > a && c > b && a > b)
-			System.out.println("the integers in non-decreasing order: " + c + " " + a + " " + b);
-		else if (c > a && c > b && b > a)
-			System.out.println("the integers in non-decreasing order: " + c + " " + b + " " + a);
+		if (number1 > number2 && number1 > number3 && number2 > number3)
+			System.out.println("the integers in non-decreasing order: " + number1 + " " + number2 + " " + number3);
+		else if (number1 > number2 && number1 > number3 && number3 > number2)
+			System.out.println("the integers in non-decreasing order: " + number1 + " " + number3 + " " + number2);
+		else if (number2 > number1 && number2 > number3 && number1 > number3)
+			System.out.println("the integers in non-decreasing order: " + number2 + " " + number1 + " " + number3);
+		else if (number2 > number1 && number2 > number3 && number3 > number1)
+			System.out.println("the integers in non-decreasing order: " + number2 + " " + number3 + " " + number1);
+		else if (number3 > number1 && number3 > number2 && number1 > number2)
+			System.out.println("the integers in non-decreasing order: " + number3 + " " + number1 + " " + number2);
+		else if (number3 > number1 && number3 > number2 && number2 > number1)
+			System.out.println("the integers in non-decreasing order: " + number3 + " " + number2 + " " + number1);
 	}
 
 }

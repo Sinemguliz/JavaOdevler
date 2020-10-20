@@ -20,7 +20,6 @@ public class Q14 {
 
 		if (guess == flip)
 			System.out.println("Correct!");
-
 		else
 			System.out.println("Sorry, incorrect.");
 

@@ -36,6 +36,7 @@ public class Q24 {
 			rank = r % 13 + "";
 
 		}
+		System.out.print("The card you picked is " + rank + " of " + suit);
 
 	}
 }

@@ -9,13 +9,12 @@ public class Q27 {
 		System.out.print("Enter a point's x- and y-coordinates: ");
 		double x = input.nextDouble();
 		double y = input.nextDouble();
-		double y2 = -x / 2 + 100;
+		
 
-		if ((y > 0) && (x > 0) && (x + 2 * y < 200))
-			System.out.print("The point is in the triangle");
-
-		else
+		if ( y > ((-y * (200 * 100)) / (-y * 200 -x * 100)) || x > ((-x * (200 * 100)) / (-y * 200 -x * 100)))
 			System.out.print("The point is not in the triangle");
-
+		else 
+			System.out.print("The point is in the triangle");
+			
 	}
 }

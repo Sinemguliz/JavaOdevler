@@ -9,68 +9,67 @@ import java.util.Scanner;
 public class Q05 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter today's day:");
-		int a = scan.nextInt();
 
-		System.out.println("the number of days elapsed since today:");
-		int b = scan.nextInt();
+		System.out.print("Enter today's day: ");
+		int todayDay = scan.nextInt();
 
-		String day = "";
+		System.out.print("Enter the number of days elapsed since today: ");
+		int numberofDay = scan.nextInt();
 
-		switch (a) {
+		String today = "";
+
+		switch (todayDay) {
 		case 0:
-			day = "Sunday";
+			today = "Sunday";
 			break;
 		case 1:
-			day = "Monday";
+			today = "Monday";
 			break;
 		case 2:
-			day = "Tuesday";
+			today = "Tuesday";
 			break;
 		case 3:
-			day = "Wednesday";
+			today = "Wednesday";
 			break;
 		case 4:
-			day = "Thursday";
+			today = "Thursday";
 			break;
 		case 5:
-			day = "Friday";
+			today = "Friday";
 			break;
 		case 6:
-			day = "Saturday";
+			today = "Saturday";
 			break;
-		default:
-			day = a % 7 + "";
 		}
 
-		String day1 = "";
+		String futureDay = "";
 
-		switch ((a + b) % 7) {
+		switch ((todayDay + numberofDay) % 7) {
 		case 0:
-			day1 = "Sunday";
+			futureDay = "Sunday";
 			break;
 		case 1:
-			day1 = "Monday";
+			futureDay = "Monday";
 			break;
 		case 2:
-			day1 = "Tuesday";
+			futureDay = "Tuesday";
 			break;
 		case 3:
-			day1 = "Wednesday";
+			futureDay = "Wednesday";
 			break;
 		case 4:
-			day1 = "Thursday";
+			futureDay = "Thursday";
 			break;
 		case 5:
-			day1 = "Friday";
+			futureDay = "Friday";
 			break;
 		case 6:
-			day1 = "Saturday";
+			futureDay = "Saturday";
 			break;
 		default:
-			day1 = (a + b) % 7 + "";
+			futureDay = (todayDay + numberofDay) % 7 + "";
 		}
 
-		System.out.println("Today is " + day + " and the future day is " + day1);
+		System.out.println("Today is " + today + " and the future day is " + futureDay);
 	}
 }

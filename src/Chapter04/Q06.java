@@ -2,24 +2,24 @@ package Chapter04;
 
 public class Q06 {
 	public static void main(String args[]) {
-	    final double RADIUS = 40;
-	   
-	    System.out.println("Three random points are ");
-	    
-	    double angle = Math.random() * 360;
-	    double x = RADIUS * Math.cos(angle * Math.PI / 180);
-	    double y = RADIUS * Math.sin(angle * Math.PI / 180);
-	    System.out.println("(" + x + ", " + y + ")");
+		final double RADIUS = 40;
 
-	    angle = Math.random() * 360;
-	    x = RADIUS * Math.cos(angle * Math.PI / 180);
-	    y = RADIUS * Math.sin(angle * Math.PI / 180);
-	    System.out.println("(" + x + ", " + y + ")");
+		System.out.print("Three random points are ");
 
-	    angle = Math.random() * 360;
-	    x = RADIUS * Math.cos(angle * Math.PI / 180);
-	    y = RADIUS * Math.sin(angle * Math.PI / 180);
-	    System.out.println("(" + x + ", " + y + ")");
-	  }
+		double angle = Math.random() * 360;
+		double x = RADIUS * Math.cos(angle * Math.PI / 180);
+		double y = RADIUS * Math.sin(angle * Math.PI / 180);
+		System.out.print("(" + x + ", " + y + ")");
+
+		angle = Math.random() * 360;
+		x = RADIUS * Math.cos(angle * Math.PI / 180);
+		y = RADIUS * Math.sin(angle * Math.PI / 180);
+		System.out.print("(" + x + ", " + y + ")");
+
+		angle = Math.random() * 360;
+		x = RADIUS * Math.cos(angle * Math.PI / 180);
+		y = RADIUS * Math.sin(angle * Math.PI / 180);
+		System.out.print("(" + x + ", " + y + ")");
+	}
 
 }

@@ -9,10 +9,10 @@ public class Q19 {
 		System.out.println("Enter the 3 sides of a triangle.");
 		System.out.print("Side 1: ");
 		double side1 = input.nextDouble();
-		
+
 		System.out.print("Side 2: ");
 		double side2 = input.nextDouble();
-		
+
 		System.out.print("Side 3: ");
 		double side3 = input.nextDouble();
 
