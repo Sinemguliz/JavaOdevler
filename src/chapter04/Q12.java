@@ -7,13 +7,13 @@ public class Q12 {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a hex digit: ");
 		String hexString = input.nextLine();
-		
+
 		char ch = hexString.charAt(0);
-		
+
 		if ((ch >= 'A' && ch <= 'F') || (ch >= 0 && ch <= 9)) {
-			
+
 			switch (ch) {
-			
+
 			case 0:
 				System.out.println(0000);
 				break;

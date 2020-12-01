@@ -7,12 +7,12 @@ public class Q13 {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Enter a letter: ");
 		String letter = scan.next();
-		
+
 		char lowerletter = Character.toLowerCase(letter.charAt(0));
-		
-		if (!Character.isLetter(lowerletter))
+
+		if (!Character.isLetter(lowerletter)) {
 			System.out.print("invalid input");
-		else {
+		} else {
 			switch (lowerletter) {
 			case 'a':
 			case 'e':
@@ -24,8 +24,6 @@ public class Q13 {
 			default:
 				System.out.print(letter + " is a consonant.");
 			}
-
 		}
 	}
-
 }
