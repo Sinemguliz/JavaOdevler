@@ -21,7 +21,7 @@ public class Q31 {
 
 		for (int i = 1; i <= months; i++) {
 			monthlyIWorthRate = monthlyIWorthRate + monthlyIWorthRate * annualInterestRate / 1200;
-			System.out.printf(+i + "\t %.2f\n", monthlyIWorthRate);
+			System.out.printf("%3d\t %.2f\n", i, monthlyIWorthRate);
 		}
 
 	}
